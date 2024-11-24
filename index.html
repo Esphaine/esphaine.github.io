@@ -1,1 +1,79 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text</title>
+    <style>
+	
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            background: url("https://raw.githubusercontent.com/Esphaine/esphaine.github.io/main/background.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            z-index: -1;
+        }
+
+        .text-container {
+            background: rgba(50, 50, 50, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            max-width: 80%;
+            box-sizing: border-box;
+        }
+
+        .text-container p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .text-container p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="text-container">
+        <p>Welcome to my profile!</p>
+        <p>I go by lots of different names on different platforms so feel free to refer to me as any of them lol</p>
+        <br />
+        <p>Most of my time is spent either listening to music or creating my own.</p>
+        <p>I also really enjoy anime/manga, film, and photography</p>
+        <br />
+        <p>Favorite Movies: Angel's Egg, Noroi: The Curse, Perfect Blue</p>
+        <br />
+        <p>Favorite Games: Signalis, Omori</p>
+        <br />
+        <p>Favorite Bands: HEALTH, Imperial Circus Dead Decadance, JILUKA</p>
+        <br />
+        <p>Favorite Anime: Vinland Saga, Berserk (1997)</p>
+        <br />
+        <p>Feel free to add me on any platforms if you'd like :)</p>
+        <p><a href="https://guns.lol/egg_of_the_king" target="_blank" style="color: lightblue; text-decoration: none;">https://guns.lol/egg_of_the_king</a></p>
+    </div>
+</body>
+
+</html>
